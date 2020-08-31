@@ -11,11 +11,19 @@ The population data is 2019 estimates from the U.S. Census Bureau
 - python 3
 - matplotlib
 
+### Windows Powershell Installation
+```powershell
+python3 -m venv .venv
+./.venv/Scripts/Activate.ps1
+pip3 install matplotlib
+```
+
 ### Usage
 ```
 # specify the county you want to plot data for
 # look up the available county names in `statewide_cases.csv`
 $ python cases_plot.py "Sacramento"
+$ python cases_plot.py "Stanislaus"
 ```
 
 ![Example output](Sacramento-cases.png)
